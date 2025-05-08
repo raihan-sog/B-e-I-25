@@ -7,7 +7,7 @@ const visitorRouter = require("./routes/visitor.js");
 const rekapRouter = require("./routes/rekap.js");
 
 const app = express();
-const PORT = 5555;
+const PORT = process.env.PORT || 5555;
 
 // Middleware
 app.use(cors());
@@ -25,5 +25,5 @@ app.use("/api", rekapRouter);
 
 // Mulai server di semua IP (0.0.0.0)
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server berjalan di http://localhost:${PORT}`);
+  console.log(`Server berjalan di port ${PORT}`);
 });
