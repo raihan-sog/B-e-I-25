@@ -51,7 +51,7 @@ router.post("/send-rekap", async (req, res) => {
     const mailOptions = {
       from: "indonesia.ptsog@gmail.com",
       to: "sales@pt-sog.com",
-      cc: "dedy@pt-sog.com, raihan@pt-sog.com, rizqi@pt-sog.com, fahzia@pt-sog.com, faisal@pt-sog.com",
+      cc: "dedy@pt-sog.com, raihan@pt-sog.com, rizqi@pt-sog.com, aris@pt-sog.com, dwi.nugroho@pt-sog.com, faisal@pt-sog.com",
       subject: `Rekap Visitor Indo Defence 2025 (Total: ${results.length})`,
       text: `Berikut ini adalah rekap pengunjung yang melakukan scan QR di booth SOG. Terlampir file Excel.\n\nTotal visitor: ${results.length}`,
       attachments: [
